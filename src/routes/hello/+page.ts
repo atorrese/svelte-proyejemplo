@@ -20,6 +20,7 @@ export const load: PageLoad = async () => {
     });
 
     const categories  = (await response.json())as Category[];
+    console.log(categories)
     return {
         props: {
             //todos, 
